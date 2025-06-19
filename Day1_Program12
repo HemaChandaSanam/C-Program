@@ -1,0 +1,26 @@
+Volume of the shape
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159265358979323846
+
+float truncate2(float val) {
+    return (int)(val * 100) / 100.0;
+}
+
+int main() {
+    int a, b, c, d;
+
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    float volumeCuboid = truncate2((float)(a * b * c));
+    float volumeCylinder = truncate2(PI * d * d * c);
+    float volumeCone = truncate2((PI * d * d * c) / 3.0);
+    float volumeSphere = truncate2((4.0 / 3.0) * PI * d * d * d);
+
+    printf("Volume of Cubiod=%.2f\n", volumeCuboid);
+    printf("Volume of Cylinder=%.2f\n", volumeCylinder);
+    printf("Volume of Cone=%.2f\n", volumeCone);
+    printf("Volume of Shpere=%.2f\n", volumeSphere);
+
+    return 0;
+}
