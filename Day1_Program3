@@ -1,0 +1,21 @@
+Statement Execution
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int a;
+    float b;
+    char c;
+    char d[10];
+    char e[100];
+    scanf("%d\n%f\n%c\n%s\n%[^\n]\n",&a,&b,&c,d,e);
+    printf("Integer is %d\n",a);
+    printf("Float is %0.2f\n",b);
+    printf("Character is %c\n",c);
+    printf("Strings are %s and %s",d,e);
+    return 0;
+}
