@@ -1,0 +1,22 @@
+Math Functions
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() 
+{
+    float a;
+    int x,y,z;
+    scanf("%f",&a);
+    scanf("%d\n%d\n%d\n",&x,&y,&z);
+    printf("%d",(int)floor(a));
+    printf("\n%d",(int)ceil(a));
+    printf("\n%d",(int)sqrt(x));
+    printf("\n%d",(int)pow(y,z));
+    return 0;
+}
