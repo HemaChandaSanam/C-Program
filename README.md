@@ -1,2 +1,2 @@
-# C-Program
-HackerRank Problems solved during Training session(INNATE )
+# C-program
+Hacker rank solved problems
